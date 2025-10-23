@@ -11,11 +11,13 @@ export default function Blog() {
       <div className="whiteBg">
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Our Blog Stories</h1>
+            <h1 className="font40 extraBold">Nos Actualités et Inspirations</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              Découvrez les dernières tendances en architecture moderne, design d’intérieur et projets innovants sur notre blog.
               <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+              Chez Bio.Archi, nous partageons des conseils, analyses et réalisations pour inspirer vos futurs projets et vous tenir informés des nouveautés dans le monde de l’architecture.
+              <br />
+              Chaque article reflète notre passion pour le design contemporain et notre volonté de créer des espaces élégants et fonctionnels.
             </p>
           </HeaderInfo>
           <div className="row textCenter">
@@ -78,19 +80,19 @@ export default function Blog() {
           </div>
           <div className="row flexCenter">
             <div style={{ margin: "50px 0", width: "200px" }}>
-              <FullButton title="Load More" action={() => alert("clicked")} />
+              <FullButton title="Charger Plus" action={() => alert("clicked")} />
             </div>
           </div>
         </div>
       </div>
-      <div className="lightBg" style={{padding: '50px 0'}}>
+      <div className="lightBg" style={{ padding: '50px 0' }}>
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">What They Say?</h1>
+            <h1 className="font40 extraBold">Ce qu’ils disent de nous</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              Nos clients témoignent de la créativité, du professionnalisme et de l’attention aux détails que nous mettons dans chaque projet.
               <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+              Chez Bio.Archi, nous valorisons la relation de confiance et nous nous engageons à réaliser des espaces qui répondent aux besoins et aux attentes de chacun.
             </p>
           </HeaderInfo>
           <TestimonialSlider />

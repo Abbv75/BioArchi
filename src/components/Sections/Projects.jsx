@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 // Components
 import ProjectBox from "../Elements/ProjectBox";
@@ -10,7 +9,6 @@ import ProjectImg3 from "../../assets/img/projects/3.png";
 import ProjectImg4 from "../../assets/img/projects/4.png";
 import ProjectImg5 from "../../assets/img/projects/5.png";
 import ProjectImg6 from "../../assets/img/projects/6.png";
-import AddImage2 from "../../assets/img/add/add2.png";
 import { IMAGES } from "../../constant";
 
 export default function Projects() {
@@ -82,7 +80,7 @@ export default function Projects() {
           </div>
           <div className="row flexCenter">
             <div style={{ margin: "50px 0", width: "200px" }}>
-              <FullButton title="Load More" action={() => alert("clicked")} />
+              <FullButton title="Charger Plus" action={() => alert("clicked")} />
             </div>
           </div>
         </div>

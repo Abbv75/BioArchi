@@ -5,4 +5,6 @@ export default {
     image3 : '/assets/img/IMG-20251023-WA0013.jpg',
     image4 : '/assets/img/IMG-20251023-WA0050.jpg',
     image5 : '/assets/img/IMG-20251023-WA0016.jpg',
+    image6 : '/assets/img/IMG-20251023-WA0033.jpg',
+    image7 : '/assets/img/IMG-20251023-WA0038.jpg',
 }

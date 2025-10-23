@@ -5,6 +5,7 @@ import ContactImg1 from "../../assets/img/contact-1.png";
 import ContactImg2 from "../../assets/img/contact-2.png";
 import ContactImg3 from "../../assets/img/contact-3.png";
 import { green } from "@mui/material/colors";
+import { IMAGES } from "../../constant";
 
 export default function Contact() {
   return (
@@ -12,40 +13,44 @@ export default function Contact() {
       <div className="lightBg">
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Let's get in touch</h1>
+            <h1 className="font40 extraBold">Entrons en contact</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              Vous avez un projet, une idée ou simplement une question ?
+              Chez Bio.Archi, nous sommes à votre écoute pour répondre à vos besoins et vous accompagner dans la réalisation de vos espaces modernes et innovants.
+
               <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+              Contactez‑nous dès aujourd’hui et discutons ensemble de votre prochain projet architectural !
             </p>
           </HeaderInfo>
           <div className="row" style={{ paddingBottom: "30px" }}>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <Form>
-                <label className="font13">First name:</label>
+                <label className="font13">Nom prénom:</label>
                 <input type="text" id="fname" name="fname" className="font20 extraBold" />
                 <label className="font13">Email:</label>
                 <input type="text" id="email" name="email" className="font20 extraBold" />
-                <label className="font13">Subject:</label>
+                <label className="font13">Sujet:</label>
                 <input type="text" id="subject" name="subject" className="font20 extraBold" />
+                <label className="font13">Desciption:</label>
                 <textarea rows="4" cols="50" type="text" id="message" name="message" className="font20 extraBold" />
               </Form>
+
               <SumbitWrapper className="flex">
-                <ButtonInput type="submit" value="Send Message" className="pointer animate radius8" style={{ maxWidth: "220px" }} />
+                <ButtonInput type="submit" value="Envoyer le message" className="pointer animate radius8" style={{ maxWidth: "220px" }} />
               </SumbitWrapper>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 flex">
               <div style={{ width: "50%" }} className="flexNullCenter flexColumn">
                 <ContactImgBox>
-                  <img src={ContactImg1} alt="office" className="radius6" />
+                  <img src={IMAGES.image6} style={{width : '100%'}} alt="office" className="radius6" />
                 </ContactImgBox>
                 <ContactImgBox>
-                  <img src={ContactImg2} alt="office" className="radius6" />
+                  <img src={IMAGES.image1} style={{width : '100%'}} alt="office" className="radius6" />
                 </ContactImgBox>
               </div>
               <div style={{ width: "50%" }}>
                 <div style={{ marginTop: "100px" }}>
-                  <img src={ContactImg3} alt="office" className="radius6" />
+                  <img src={IMAGES.image7} style={{width : '100%'}} alt="office" className="radius6" />
                 </div>
               </div>
             </div>
