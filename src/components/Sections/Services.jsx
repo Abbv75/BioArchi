@@ -1,14 +1,10 @@
-import React from "react";
 import styled from "styled-components";
 // Components
 import ClientSlider from "../Elements/ClientSlider";
 import ServiceBox from "../Elements/ServiceBox";
 import FullButton from "../Buttons/FullButton";
 // Assets
-import AddImage1 from "../../assets/img/add/1.png";
-import AddImage2 from "../../assets/img/add/2.png";
-import AddImage3 from "../../assets/img/add/3.png";
-import AddImage4 from "../../assets/img/add/4.png";
+import { IMAGES } from "../../constant";
 
 export default function Services() {
   return (
@@ -21,37 +17,41 @@ export default function Services() {
       <div className="whiteBg" style={{ padding: "60px 0" }}>
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Our Awesome Services</h1>
+            <h1 className="font40 extraBold">Nos Services d’Exception</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-              <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+              Chez <b>Bio.Archi</b>, nous offrons une gamme complète de services en <b>architecture moderne</b>, <b>design intérieur</b> et <b>accompagnement technique</b>.
+              Chaque projet est pensé sur mesure, avec <b>un souci du détail</b>, de <b>la fonctionnalité</b> et <b>de l’esthétique contemporaine</b>.
             </p>
           </HeaderInfo>
           <ServiceBoxRow className="flex">
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="roller"
-                title="Graphic Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                title="Conception Architecturale"
+                subtitle={`Nous concevons des bâtiments uniques, adaptés à vos besoins et à votre vision.
+                  Notre équipe allie créativité et rigueur pour donner vie à des espaces modernes, élégants et durables.`}
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="monitor"
-                title="Web Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore."
+                title="Design d’Intérieur"
+                subtitle="De la disposition des volumes à la sélection des matériaux, nous créons des intérieurs qui reflètent votre personnalité et valorisent chaque mètre carré."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="browser"
-                title="Development"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat."
+                title="Modélisation 3D & Rendus Réalistes"
+                subtitle="Nous réalisons des maquettes 3D et des rendus photo-réalistes pour vous permettre de visualiser votre projet avant sa réalisation."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
-              <ServiceBox icon="printer" title="Print" subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor." />
+              <ServiceBox
+                icon="printer"
+                title="Suivi et Assistance Technique"
+                subtitle="Nous assurons un accompagnement complet — de la conception à la livraison — pour garantir la qualité et la conformité de chaque étape du chantier."
+              />
             </ServiceBoxWrapper>
           </ServiceBoxRow>
         </div>
@@ -59,37 +59,32 @@ export default function Services() {
           <div className="container">
             <Advertising className="flexSpaceCenter">
               <AddLeft>
-                <h4 className="font15 semiBold">A few words about company</h4>
-                <h2 className="font40 extraBold">A Study of Creativity</h2>
+                <h4 className="font15 semiBold">Quelques mots sur notre entreprise</h4>
+                <h2 className="font40 extraBold">Architecture moderne</h2>
                 <p className="font12">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                  diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                  Fondée à Bamako, Bio.Archi est une agence d’architecture et de design qui réinvente les espaces modernes à travers une approche alliant créativité, fonctionnalité et élégance.
+                  Nous mettons notre savoir-faire au service de projets résidentiels, commerciaux et institutionnels, en proposant des solutions architecturales contemporaines adaptées au mode de vie d’aujourd’hui.
+
+                  Notre philosophie repose sur une conviction simple : chaque bâtiment doit raconter une histoire.
+                  Chez Bio.Archi, nous transformons vos idées en espaces vivants, esthétiques et durables, où chaque ligne et chaque matière ont du sens.
                 </p>
-                <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0"}}>
-                  <div style={{ width: "190px" }}>
-                    <FullButton title="Get Started" action={() => alert("clicked")} />
-                  </div>
-                  <div style={{ width: "190px", marginLeft: "15px" }}>
-                    <FullButton title="Contact Us" action={() => alert("clicked")} border />
-                  </div>
-                </ButtonsRow>
               </AddLeft>
               <AddRight>
                 <AddRightInner>
                   <div className="flexNullCenter">
                     <AddImgWrapp1 className="flexCenter">
-                      <img src={AddImage1} alt="office" />
+                      <img src={IMAGES.image5} alt="office" />
                     </AddImgWrapp1>
                     <AddImgWrapp2>
-                      <img src={AddImage2} alt="office" />
+                      <img src={IMAGES.image4} alt="office" />
                     </AddImgWrapp2>
                   </div>
                   <div className="flexNullCenter">
                     <AddImgWrapp3>
-                      <img src={AddImage3} alt="office" />
+                      <img src={IMAGES.image3} alt="office" />
                     </AddImgWrapp3>
                     <AddImgWrapp4>
-                      <img src={AddImage4} alt="office" />
+                      <img src={IMAGES.image2} alt="office" />
                     </AddImgWrapp4>
                   </div>
                 </AddRightInner>

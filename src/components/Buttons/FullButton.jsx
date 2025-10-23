@@ -21,8 +21,8 @@ const Wrapper = styled.button`
   outline: none;
   color: ${(props) => (props.border ? "#707070" : "#fff")};
   :hover {
-    background-color: ${(props) => (props.border ? "transparent" : "#580cd2")};
-    border: 1px solid ${green[600]};
+    background-color: ${(props) => (props.border ? "transparent" : green[800])};
+    border: 1px solid ${green[800]};
     color: ${(props) => (props.border ? green[600] : "#fff")};
   }
 `;

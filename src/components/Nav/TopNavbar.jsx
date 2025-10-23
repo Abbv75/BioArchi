@@ -9,6 +9,7 @@ import LogoIcon from "../../assets/svg/Logo";
 import BurgerIcon from "../../assets/svg/BurgerIcon";
 import { CardMedia } from "@mui/material";
 import { IMAGES } from "../../constant";
+import { green } from "@mui/material/colors";
 
 export default function TopNavbar() {
   const [y, setY] = useState(window.scrollY);
@@ -33,10 +34,10 @@ export default function TopNavbar() {
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
             <LogoIcon />
 
-            <h1 style={{ marginLeft: "15px" }} className="font20 extraBold">
+            <h1 style={{ marginLeft: "15px", color : green[600] }} className="font20 extraBold">
               Bio.Archi
             </h1>
-            
+
           </Link>
           <BurderWrapper className="pointer" onClick={() => toggleSidebar(!sidebarOpen)}>
             <BurgerIcon />
