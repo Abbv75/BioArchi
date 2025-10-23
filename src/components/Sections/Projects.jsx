@@ -11,6 +11,7 @@ import ProjectImg4 from "../../assets/img/projects/4.png";
 import ProjectImg5 from "../../assets/img/projects/5.png";
 import ProjectImg6 from "../../assets/img/projects/6.png";
 import AddImage2 from "../../assets/img/add/add2.png";
+import { IMAGES } from "../../constant";
 
 export default function Projects() {
   return (
@@ -18,11 +19,13 @@ export default function Projects() {
       <div className="whiteBg">
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Our Awesome Projects</h1>
+            <h1 className="font40 extraBold">Nos Réalisations Exceptionnelles</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              Chaque projet signé Bio.Archi est une expression unique du design moderne et du savoir-faire architectural.
               <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+              Nous accordons une attention particulière à chaque détail pour créer des espaces harmonieux, fonctionnels et inspirants.
+              <br />
+              Nos réalisations couvrent un large éventail de domaines — des résidences contemporaines aux bâtiments commerciaux, en passant par les espaces publics et les projets institutionnels.
             </p>
           </HeaderInfo>
           <div className="row textCenter">
@@ -90,25 +93,19 @@ export default function Projects() {
             <AddLeft>
               <AddLeftInner>
                 <ImgWrapper className="flexCenter">
-                  <img className="radius8" src={AddImage2} alt="add" />
+                  <img className="radius8" src={IMAGES.image2} alt="add" />
                 </ImgWrapper>
               </AddLeftInner>
             </AddLeft>
             <AddRight>
-              <h4 className="font15 semiBold">A few words about company</h4>
-              <h2 className="font40 extraBold">A Study of Creativity</h2>
+              <h4 className="font15 semiBold">Quelques mots sur Bio.Archi</h4>
+              <h2 className="font40 extraBold">Une etude de créativité</h2>
               <p className="font12">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                <b>Bio.Archi</b> est une agence d’architecture moderne basée à <b>Bamako</b>, spécialisée dans la création de bâtiments et d’espaces innovants.
+                Nous transformons les idées en projets concrets, alliant <b>design contemporain</b>, <b>fonctionnalité et esthétique raffinée</b>.
+                <br />
+                Notre approche : <b>comprendre vos besoins, imaginer des solutions originales et réaliser des espaces qui inspirent et durent</b>.
               </p>
-              <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0" }}>
-                <div style={{ width: "190px" }}>
-                  <FullButton title="Get Started" action={() => alert("clicked")} />
-                </div>
-                <div style={{ width: "190px", marginLeft: "15px" }}>
-                  <FullButton title="Contact Us" action={() => alert("clicked")} border />
-                </div>
-              </ButtonsRow>
             </AddRight>
           </Advertising>
         </div>
