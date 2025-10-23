@@ -19,9 +19,6 @@ export default function Header() {
             Chez Bio.Archi, nous concevons des espaces inspirés par la nature et adaptés au climat du Mali.
             Notre mission : créer des bâtiments modernes, esthétiques et respectueux de l’environnement en utilisant des matériaux locaux et des techniques bioclimatiques.
           </HeaderP>
-          <BtnWrapper>
-            <FullButton title="Get Started" />
-          </BtnWrapper>
         </div>
       </LeftSide>
       <RightSide>
