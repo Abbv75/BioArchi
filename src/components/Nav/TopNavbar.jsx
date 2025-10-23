@@ -7,6 +7,8 @@ import Backdrop from "../Elements/Backdrop";
 // Assets
 import LogoIcon from "../../assets/svg/Logo";
 import BurgerIcon from "../../assets/svg/BurgerIcon";
+import { CardMedia } from "@mui/material";
+import { IMAGES } from "../../constant";
 
 export default function TopNavbar() {
   const [y, setY] = useState(window.scrollY);
@@ -23,14 +25,18 @@ export default function TopNavbar() {
   return (
     <>
       <Sidebar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
+
       {sidebarOpen && <Backdrop toggleSidebar={toggleSidebar} />}
+      
       <Wrapper className="flexCenter animate whiteBg" style={y > 100 ? { height: "60px" } : { height: "80px" }}>
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
             <LogoIcon />
+
             <h1 style={{ marginLeft: "15px" }} className="font20 extraBold">
-              fanatic
+              Bio.Archi
             </h1>
+            
           </Link>
           <BurderWrapper className="pointer" onClick={() => toggleSidebar(!sidebarOpen)}>
             <BurgerIcon />

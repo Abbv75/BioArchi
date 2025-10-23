@@ -4,6 +4,7 @@ import styled from "styled-components";
 import ContactImg1 from "../../assets/img/contact-1.png";
 import ContactImg2 from "../../assets/img/contact-2.png";
 import ContactImg3 from "../../assets/img/contact-3.png";
+import { green } from "@mui/material/colors";
 
 export default function Contact() {
   return (
@@ -85,15 +86,15 @@ const Form = styled.form`
   }
 `;
 const ButtonInput = styled.input`
-  border: 1px solid #7620ff;
-  background-color: #7620ff;
+  border: 1px solid ${green[600]};
+  background-color: ${green[600]};
   width: 100%;
   padding: 15px;
   outline: none;
   color: #fff;
   :hover {
     background-color: #580cd2;
-    border: 1px solid #7620ff;
+    border: 1px solid ${green[600]};
     color: #fff;
   }
   @media (max-width: 991px) {
